@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  /* text-align: center; */
+  background: linear-gradient(to bottom, #61d3d1 0%, #4e8ee3 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.background {
+  width: 30%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  /* margin-top: 10px; */
+}
+.cross {
+  text-decoration: line-through;
+  color: green;
+}
+.notCross {
+  text-decoration: none;
+  color: black;
+}
+.title {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+input {
+  width: 80%;
+  background-color: white;
+  border: 1px solid rgb(161, 159, 159);
+  outline: none;
+  border-radius: 3px;
+  padding: 4px 5px;
+}
+.inputDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+@keyframes inputDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.inputDiv button {
+  background-color: #8e49e9;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  width: 12%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #8e49e9;
+}
+.inputDiv button:hover {
+  background-color: white;
+  color: #8e49e9;
+}
+.itemDiv > div {
+  display: flex;
+  justify-content: space-between;
+  animation-name: inputDiv;
+  animation-duration: 1s;
+  margin: 5px 0px;
+  border-radius: 2px;
+}
+.itemTitle {
+  width: 75%;
+  overflow: hidden;
+  background-color: #f5f1f1;
+  padding-left: 4px;
+  border-radius: 3px;
+}
+.itemDiv button {
+  background-color: #e64e3d;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.compDiv {
+  width: 97.5%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin: 5px 0px;
+  border-radius: 3px;
+  padding-left: 4px;
+  height: 22px;
+  display: flex;
+  animation-name: inputDiv;
+  animation-duration: 1s;
+}
+.itemDiv button:hover {
+  background-color: white;
+  color: #e64e3d;
+  border: 1px solid #e64e3d;
+}
